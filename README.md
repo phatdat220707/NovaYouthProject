@@ -19,7 +19,13 @@ Nova Youth 2026 prototype by David and Biruk.
 
 React and TypeScript frontend, Cloudflare-hosted server, Supabase PostgreSQL and private photo storage. The server keeps model credentials private and checks team permissions. Supabase Auth is planned for individual accounts.
 
-This repository currently contains the setup package and implementation handoff. The complete application is still being built; the repository is not yet a runnable finished app.
+Application source is now available in `web/`. The complete Supabase submission and approval flow has passed a local integration test. Hosted checks are in progress.
+
+## Run the application
+
+Requires Node.js 22.13 or newer. From `web/`, run `npm ci`, copy `.dev.vars.example` to `.dev.vars`, fill the values privately, then run `npm run dev`. Open the exact Local URL printed by the server. Do not commit the filled secrets file.
+
+The map includes 10 simulated seed points plus approved demo submissions. All remain labelled Demo. Individual accounts are not yet implemented.
 
 ## Supabase handoff
 
