@@ -2,6 +2,8 @@
 
 Nova Youth 2026 prototype by David and Biruk.
 
+**Live demo: https://bincheck-hk-nova-david.lonehoop2.chatgpt.site** — public viewing; team access is required for contributions and reviews.
+
 **Biruk: start with [the Supabase setup guide](docs/SUPABASE_SETUP.md), then run [supabase/setup.sql](supabase/setup.sql) once in the SQL Editor of a NEW Supabase project.**
 
 ## Current scope
@@ -19,7 +21,7 @@ Nova Youth 2026 prototype by David and Biruk.
 
 React and TypeScript frontend, Cloudflare-hosted server, Supabase PostgreSQL and private photo storage. The server keeps model credentials private and checks team permissions. Supabase Auth is planned for individual accounts.
 
-Application source is now available in `web/`. The complete Supabase submission and approval flow has passed a local integration test. Hosted checks are in progress.
+Application source is available in `web/`. The complete Supabase submission and approval flow passed integration testing: pending records and photographs stay hidden from public visitors, and approved demo records become visible. The deployed application also passed homepage, Supabase connection, public map, team sign-in and protected-review checks.
 
 ## Run the application
 
