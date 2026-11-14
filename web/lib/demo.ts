@@ -17,3 +17,6 @@ export const DEMO_FACILITIES:Facility[]=places.map(([title,lat,lng,kind,status],
 export const STATUS_LABEL:Record<string,string>={active:"Reviewed",needs_review:"Needs review",unavailable:"Reported unavailable",pending:"Pending review",rejected:"Not published"};
 export const CATEGORY_LABEL:Record<string,string>={cigarette_receptacle_visible:"Cigarette receptacle visible",ordinary_bin:"Ordinary bin",covered_or_obstructed:"Covered or obstructed",irrelevant:"Unrelated image",unclear:"More evidence needed"};
 export function distance(a:number,b:number,c:number,d:number){const r=Math.PI/180,x=(c-a)*r,y=(d-b)*r,q=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2;return 6371000*2*Math.atan2(Math.sqrt(q),Math.sqrt(1-q));}
+
+export function formatDistance(metres:number){if(!Number.isFinite(metres)||metres<0)return "Unavailable";return metres<1000?`${Math.round(metres)} m`:`${(metres/1000).toLocaleString("en-HK",{minimumFractionDigits:metres<10000?1:0,maximumFractionDigits:metres<10000?1:0})} km`;}
+export function locationNeedsConfirmation(lat:number,lng:number,accuracy:number){return distance(...CENTER,lat,lng)>100000||accuracy>2000;}
