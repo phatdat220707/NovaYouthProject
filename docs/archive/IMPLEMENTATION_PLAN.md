@@ -1,3 +1,5 @@
+> Archived competition planning document. See the root README and current docs for implemented scope.
+
 # Current implementation decisions
 
 This document supersedes backend and login details in earlier proposal drafts.

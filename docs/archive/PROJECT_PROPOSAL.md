@@ -1,3 +1,5 @@
+> Archived competition planning document. See the root README and current docs for implemented scope.
+
 # BinCheck HK Project Proposal
 
 BinCheck HK is a web app that helps people find recorded cigarette-disposal facilities and understand the evidence behind each location. Our goal today is to demonstrate a complete experience using a clearly labelled simulated dataset and working community submissions.

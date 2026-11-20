@@ -1,8 +1,8 @@
-# Supabase setup for Biruk
+# Supabase setup
 
 ## Immediate task
 
-Create and configure the Supabase project while David builds the app. David does not have a Supabase account. Do not wait for David to create the project.
+Create a fresh Supabase project for your own deployment. See SETUP.md for the current application configuration.
 
 1. Sign in at https://supabase.com/dashboard and create a NEW project named BinCheck HK. Choose an available region near Hong Kong and save the database password privately.
 2. Keep the Data API enabled. The setup script supplies explicit table permissions and Row Level Security policies.
@@ -12,7 +12,7 @@ Create and configure the Supabase project while David builds the app. David does
 6. Open Connect or Settings > API Keys. Record the project URL, publishable key and server-only secret key. If a new secret key needs to be created, create one for the app backend. The database password is not the API key.
 7. Configure values using the root .env.example as a naming guide. Keep filled files private and ignored by Git. Do not post secret keys in commits, issues or README files. David will configure the production server environment.
 
-## What to send David
+## Deployment handoff
 
 - Project URL and project reference.
 - Confirmation that the SQL succeeded and the bin-evidence bucket is private.

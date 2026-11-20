@@ -8,3 +8,14 @@ dist/
 .wrangler/
 .sites-runtime/
 *.pem
+
+# Build state and private workspace artifacts
+.next/
+.vinext/
+*.tsbuildinfo
+*.log
+__pycache__/
+outputs/
+.deck-*/
+supabase-config*.json
+!.dev.vars.example
